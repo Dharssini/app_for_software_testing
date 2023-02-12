@@ -1,5 +1,5 @@
-# App 4 Software Testing & DevOps Pipeline
-- This is a small python application that I made to try on 4 types of software testing and a DevOps pipeline.
+# App for Software Testing
+- This is a small python application that I made to try on 4 types of software testing.
 
 ## App4Test Description
 
@@ -17,23 +17,3 @@
     2. [Integration testing](https://github.com/MelekElloumi/Software-Testing-DevOps-Pipeline/tree/main/Integration%20Test)
     3. [E2E testing](https://github.com/MelekElloumi/Software-Testing-DevOps-Pipeline/tree/main/e2e%20Test)
     4. [UAT](https://github.com/MelekElloumi/Software-Testing-DevOps-Pipeline/tree/main/UAT)
-
-## DevOps Pipeline
-![example workflow](https://github.com/MelekElloumi/Software-Testing-DevOps-Pipeline/actions/workflows/DevOps_Pipeline.yml/badge.svg)
-
-- I integrated a CI/CD pipeline using GitHub Actions, Docker and Amazon ECS.
-- The main workflow consists of 3 jobs :
-    1. Test
-       - 2 parallel jobs: Tests on python 3.8 and 3.9
-    2. Build
-       - A docker image is built and pushed to [Docker Hub](https://hub.docker.com/r/melekelloumi/app4test)
-    3. Deploy
-        - The image is deployed to ECS with a service of 2 tasks and exposed on port 5000.
-        - If service is running, check App4Test [here](http://44.200.159.100:5000/)
-  
-    ### Pipeline:
-    ![Imgur](https://i.imgur.com/95VMQqK.png)
-    ### Deployed app:
-    ![Imgur](https://i.imgur.com/qNBk1u7.png)
-
-  
